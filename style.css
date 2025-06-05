@@ -4,16 +4,17 @@
     box-sizing: border-box;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 }
-#nav-container {
-    display: flex;
-    overflow: hidden; /* no scrollbars */
+.container{
+    display: flex;    
+    height: 100vh; /* full screen height */
 }
 
 #sidebar {
+    overflow: hidden; /* no scrollbars */
     width: 245px;
     height: 100vh; /* full screen height */
     border-right: 1px solid hsl(0, 0%, 86%);
-    /* flex-direction: column; */
+    flex-direction: column;
     justify-content: space-between;
 }
 
@@ -36,8 +37,97 @@
     background-color: hsl(0, 0%, 94%);
 }
 
+/* Show extra buttons by default */
+.sidebar-extras {
+    flex: 1;
+    flex-shrink: 0;
+    flex-direction: column;
+}
+
+#page-container{
+    display: flex; 
+    flex-direction: column;
+    flex:1;
+    height: 100vh; /* full screen height */
+    overflow-y: auto;
+    overflow-x: hidden;
+    
+}
+
+#main-page{
+    flex: 1 0 auto; /* allow main page to grow */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    /* background-color: rgb(225, 225, 225); */
+    
+}
+
+#story-tab{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 650px; /* max width for larger screens */
+    height: 150px; 
+    margin: 32px auto 0 auto;
+
+    /* background-color: aliceblue; */
+    overflow-x: auto; /*horizontal scroll*/
+    overflow-y: hidden; /*no vertical scroll*/    
+    scrollbar-width: none; /* hide scrollbar */
+    position: relative;
+}
+
+.story-container{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.story{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+}
+
+.story-image{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 10px;
+    cursor: pointer;
+}
+.story-username{
+    text-align: center;
+    font-size: 14px;
+    color: hsl(0, 0%, 20%);
+}
+
+.post-tab{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* width: 450px;  */
+    /* fixed width for posts */
+    
+}
+
+#post-media{
+    /* margin: 40px;    */
+    gap:20px;
+    align-items: center;
+}
+
+
+.suggestions{
+    display: flex;
+    max-width: 650px; /* max width for larger screens */
+    margin-top: 20px;
+}
+
 /* hide button text when small window */
-@media (max-width: 850px) {
+@media (max-width: 1000px) {
     /* hides text on button */
     #sidebar button span {
         display: none
@@ -52,15 +142,19 @@
         width: 85px;
     }
     
+    .suggestions {
+        display: none !important;
+    }
 }
-/* Show extra buttons by default */
-.sidebar-extras {
-    flex: 1;
-    flex-direction: column;
+
+#sidebar-more{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content:last baseline
 }
 
 /* hide extra buttons in small screen */
-@media (max-height: 500px) {
+@media (max-height: 700px) {
     .sidebar-extras {
         display: none !important;
     }
