@@ -67,11 +67,12 @@
 
 #story-tab{
     display: flex;
+    flex-shrink: 0;
     align-items: center;
     width: 100%;
     max-width: 650px; /* max width for larger screens */
     height: 150px; 
-    margin: 32px auto 0 auto;
+    /* margin: 10px auto 0 auto; */
 
     /* background-color: aliceblue; */
     overflow-x: auto; /*horizontal scroll*/
@@ -83,7 +84,7 @@
 .story-container{
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 7px;
 }
 .story{
     display: flex;
@@ -100,23 +101,40 @@
 }
 .story-username{
     text-align: center;
-    font-size: 14px;
+    font-size: 12px;
     color: hsl(0, 0%, 20%);
 }
 
-.post-tab{
+#post-media{
+    margin-top: 50px;
+    background-color: aliceblue;    
+}
+#post{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    /* width: 450px;  */
-    /* fixed width for posts */
-    
+    justify-content: center;
+    align-items: flex-start;
+    /* gap: 30px; */    
+}
+.post-logo{
+    width: 450px;
+    height: 450px;
 }
 
-#post-media{
-    /* margin: 40px;    */
-    gap:20px;
-    align-items: center;
+#post-interactions-buttons button{    
+    border: none;
+    background: none;    
+    cursor: pointer;
+    font-size: 23px;
+    padding: 10px;    
+}
+
+#post-interactions-buttons {
+    display: flex;
+    width: 100%;           
+}
+#post-save {
+    margin-left: auto; /* push to the far right */
 }
 
 
@@ -139,7 +157,7 @@
     }
     /* reduce sidebar size */
     #sidebar {
-        width: 85px;
+        width: 80px;
     }
     
     .suggestions {
