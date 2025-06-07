@@ -12,6 +12,8 @@
 
     <body>
         <div class="container">
+            
+            <!-- Navigation bar -->
             <div id="sidebar"> 
                 <i style= "font-size: xx-large; padding: 30px;" class="fa-brands fa-instagram"></i>
                 <nav class="nav"> 
@@ -37,93 +39,102 @@
             
             <div id="page-container"> 
                 <div id="main-page"> 
+                    <!-- Story  -->
                     <div id="story-tab"> 
                         <div class="story-container" role="presentation">
                             <div class="story">
-                                <img src = "https:randomuser.me/api/portraits/women/32.jpg" alt="User story" class="story-image">
+                                <div class="story-border">
+                                <img src = "https:randomuser.me/api/portraits/women/32.jpg" alt="User story">
+                                </div>  
                                 <span class="story-username"> Jessii </span>                    
                             </div>
 
                             <div class="story">
-                                <img src = "https:randomuser.me/api/portraits/men/42.jpg" alt="User story" class="story-image">
+                                <div class="story-border">
+                                <img src = "https:randomuser.me/api/portraits/men/42.jpg" alt="User story">
+                                </div>  
                                 <span class="story-username"> Midlife_wief</span>
                             </div>
 
                             <div class="story">
-                                <img src = "https:randomuser.me/api/portraits/women/9.jpg" alt="User story" class="story-image">
+                                <div class="story-border">
+                                <img src = "https:randomuser.me/api/portraits/women/9.jpg" alt="User story">
+                                </div>
                                 <span class="story-username"> milfme </span>
                             </div>
                             
                             <div class="story">
-                                <img src = "https:randomuser.me/api/portraits/women/89.jpg" alt="User story" class="story-image">
+                                <div class="story-border">
+                                <img src = "https:randomuser.me/api/portraits/women/89.jpg" alt="User story">
+                                </div>
                                 <span class="story-username"> realbaddie </span>
                             </div>
 
                             <div class="story">
-                                <img src = "https:randomuser.me/api/portraits/men/90.jpg" alt="User story" class="story-image">
+                                <div class="story-border">
+                                <img src = "https:randomuser.me/api/portraits/men/90.jpg" alt="User story">
+                                </div>
                                 <span class="story-username"> ismile </span>
                             </div>
 
                             <div class="story">
-                                <img src = "https:randomuser.me/api/portraits/women/55.jpg" alt="User story" class="story-image">
+                                <div class="story-border">
+                                <img src = "https:randomuser.me/api/portraits/women/55.jpg" alt="User story">
+                                </div>  
                                 <span class="story-username"> just_sarah </span>
-                            </div>
-
-                            <div class="story">
-                                <img src = "https:randomuser.me/api/portraits/women/3.jpg" alt="User story" class="story-image">
-                                <span class="story-username"> heh </span>                    
-                            </div>
-
-                            <div class="story">
-                                <img src = "https:randomuser.me/api/portraits/men/42.jpg" alt="User story" class="story-image">
-                                <span class="story-username"> Midlife_wief</span>
-                            </div>
-
-                            <div class="story">
-                                <img src = "https:randomuser.me/api/portraits/women/9.jpg" alt="User story" class="story-image">
-                                <span class="story-username"> milfme </span>
-                            </div>
-                            
-                            <div class="story">
-                                <img src = "https:randomuser.me/api/portraits/women/89.jpg" alt="User story" class="story-image">
-                                <span class="story-username"> realbaddie </span>
-                            </div>
-
-                            <div class="story">
-                                <img src = "https:randomuser.me/api/portraits/men/90.jpg" alt="User story" class="story-image">
-                                <span class="story-username"> ismile </span>
-                            </div>
-
-                            <div class="story">
-                                <img src = "https:randomuser.me/api/portraits/women/55.jpg" alt="User story" class="story-image">
-                                <span class="story-username"> just_sarah </span>
-                            </div>
-                            
+                            </div>                            
 
                         </div>
                         <!-- <button id="story-scroll-btn" aria-label="next stories"> click</button> -->
                     </div> <!-- end of story tab-->
 
-                    <div class="post-tab">
-                        
-                        <div id="post-header"> 
-                            <div id="user-info"> </div> 
-                        </div>
+                    <div class="post-tab">                        
                         <div id="post-media">
-                            <div id="post"> 
-                                <img src="assets/instagram-logo.png" alt="Instagram Logo" class="post-logo">
+
+                            <div id="post">                                
+                                <div class="post-header"> 
+                                    <div class="story-border">
+                                        <img src = "https:randomuser.me/api/portraits/women/84.jpg">
+                                    </div>
+                                    <span id="post-username" style="font-weight: 600; font-size: 14px"> herkki </span>                                   
+                                    <span id="time-stamp" style="color: hsl(0, 0%, 45%)"> • 19m </span>
+                                    <span id="post-options" style="margin-left: auto;"> 
+                                        <i class="fa-solid fa-ellipsis"></i> 
+                                    </span>
+                                </div>
+                                
+                                    <img src="assets/comments.png" alt="Instagram Logo" class="post-image">
                                     <span id="post-interactions-buttons"> 
                                         <button> <i class="fa-regular fa-heart"></i> </button>
                                         <button> <i class="fa-regular fa-comment"></i> </button>
                                         <button> <i class="fa-regular fa-paper-plane"></i> </button>
                                         <button id="post-save"> <i class="fa-regular fa-bookmark"></i> </button>
                                     </span>
-                                <div class="post-message"> </div>
-                                <div class="comments"></div>
+                                <div class="post-message"> 
+                                    <p>
+                                    <!-- Liked by <strong>4GeeksAcademy, html5, Web</strong> and <strong>100,000 others</strong> -->
+                                    </p>
+                                <p> HEy guys welcome to my youtube channel >//<  </p> </div>
+                                <div class="comments">
+                                    <input type="text" placeholder="Add a comment..." style="flex:1; padding: 20px 0px; border: none; background: none;">
+                                    <button type="submit" style="border:none; background: none; color: #0053a1; font-weight: bold; cursor: pointer;">Post</button>
+
+                                </div>
                             </div>
                             
                             <div id="post"> 
-                                <img src="assets/instagram-logo.png" alt="Instagram Logo" class="post-logo">
+                                <div class="post-header"> 
+                                    <div class="story-border">
+                                        <img src = "https:randomuser.me/api/portraits/women/84.jpg">
+                                    </div>
+                                    <span id="post-username" style="font-weight: 600; font-size: 14px"> herkki </span>                                   
+                                    <span id="time-stamp" style="color: hsl(0, 0%, 45%)"> • 10h </span>
+                                    <span id="post-options" style="margin-left: auto;"> 
+                                        <i class="fa-solid fa-ellipsis"></i> 
+                                    </span>
+                                </div>
+
+                                <img src="assets/instagram-logo.png" alt="Instagram Logo" class="post-image">
                                     <span id="post-interactions-buttons"> 
                                         <button> <i class="fa-regular fa-heart"></i> </button>
                                         <button> <i class="fa-regular fa-comment"></i> </button>
@@ -134,7 +145,18 @@
                             </div>
 
                             <div id="post"> 
-                                <img src="assets/instagram-logo.png" alt="Instagram Logo" class="post-logo">
+                                <div class="post-header"> 
+                                    <div class="story-border">
+                                        <img src = "https:randomuser.me/api/portraits/women/84.jpg">
+                                    </div>
+                                    <span id="post-username" style="font-weight: 600; font-size: 14px"> herkki </span>                                   
+                                    <span id="time-stamp" style="color: hsl(0, 0%, 45%)"> • 4d </span>
+                                    <span id="post-options" style="margin-left: auto;"> 
+                                        <i class="fa-solid fa-ellipsis"></i> 
+                                    </span>
+                                </div>
+
+                                <img src="assets/instagram-logo.png" alt="Instagram Logo" class="post-image">
                                     <span id="post-interactions-buttons"> 
                                         <button> <i class="fa-regular fa-heart"></i> </button>
                                         <button> <i class="fa-regular fa-comment"></i> </button>
@@ -145,7 +167,18 @@
                             </div>
 
                             <div id="post"> 
-                                <img src="assets/instagram-logo.png" alt="Instagram Logo" class="post-logo">
+                                <div class="post-header"> 
+                                    <div class="story-border">
+                                        <img src = "https:randomuser.me/api/portraits/women/84.jpg">
+                                    </div>
+                                    <span id="post-username" style="font-weight: 600; font-size: 14px"> herkki </span>                                   
+                                    <span id="time-stamp" style="color: hsl(0, 0%, 45%)"> • 2w </span>
+                                    <span id="post-options" style="margin-left: auto;"> 
+                                        <i class="fa-solid fa-ellipsis"></i> 
+                                    </span>
+                                </div>
+
+                                <img src="assets/instagram-logo.png" alt="Instagram Logo" class="post-image">
                                     <span id="post-interactions-buttons"> 
                                         <button> <i class="fa-regular fa-heart"></i> </button>
                                         <button> <i class="fa-regular fa-comment"></i> </button>
@@ -154,8 +187,20 @@
                                 <div class="post-message"> </div>
                                 <div class="comments"></div>
                             </div>
+
                             <div id="post"> 
-                                <img src="assets/instagram-logo.png" alt="Instagram Logo" class="post-logo">
+                                <div class="post-header"> 
+                                    <div class="story-border">
+                                        <img src = "https:randomuser.me/api/portraits/women/84.jpg">
+                                    </div>
+                                    <span id="post-username" style="font-weight: 600; font-size: 14px"> herkki </span>                                   
+                                    <span id="time-stamp" style="color: hsl(0, 0%, 45%)"> • 2h </span>
+                                    <span id="post-options" style="margin-left: auto;"> 
+                                        <i class="fa-solid fa-ellipsis"></i> 
+                                    </span>
+                                </div>
+
+                                <img src="assets/instagram-logo.png" alt="Instagram Logo" class="post-image">
                                     <span id="post-interactions-buttons"> 
                                         <button> <i class="fa-regular fa-heart"></i> </button>
                                         <button> <i class="fa-regular fa-comment"></i> </button>
@@ -174,7 +219,7 @@
                         <span> Suggestions for you </span>
                         <button class="see-all"> See All </button>
                     </div>
-                </div>
+                </div>                
             </div> <!-- end of page container -->
         </div> <!-- end of container -->
     </body>
